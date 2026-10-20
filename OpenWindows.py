@@ -22,6 +22,6 @@ def window_enum_callback(id,extra):
 
 if __name__ == "__main__":
 
-    # Start scan: EnumWindows passes each window handle to window_enum_callback
+    # starts scan on all windows: calls to window_enum_callback for every window
     win32gui.EnumWindows(window_enum_callback,None) #doesnt work without none, extra variable
 
